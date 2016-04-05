@@ -23,7 +23,7 @@ module.exports = function(starting) {
       price = num;
     },
     coins: function () {
-      
+
     },
     trinkets: function () {
 
