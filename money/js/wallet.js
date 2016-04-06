@@ -20,7 +20,7 @@ module.exports = function(starting) {
         console.log("coins: " + coins);
         console.log("trinkets: " + trinkets);
       } else if (trinkets === 0) {
-        alert("No can do. Buy a trinket first.");
+        alert("Nope. Buy a trinket first.");
       }
     },
     setPrice: function (num) {
