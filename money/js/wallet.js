@@ -9,6 +9,9 @@ module.exports = function(starting) {
         console.log("coins: " + coins);
         console.log("trinkets: " + trinkets);
       }
+      else if (coins < price){
+        alert("You spent too much! Try to sell a trinket.");
+      }
     },
     sell: function () {
       if (trinkets > 0) {
@@ -16,6 +19,8 @@ module.exports = function(starting) {
         coins = coins + price;
         console.log("coins: " + coins);
         console.log("trinkets: " + trinkets);
+      } else if (trinkets === 0) {
+        alert("No can do. Buy a trinket first.");
       }
     },
     setPrice: function (num) {
