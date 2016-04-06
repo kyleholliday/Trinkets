@@ -1,8 +1,0 @@
-language: node_js
-node_js:
-  - "stable"
-before_script:
-  - npm install gulp
-  - npm install gulp-browserify
-  - npm install gulp-sass
-script: gulp
