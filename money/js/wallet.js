@@ -1,5 +1,4 @@
 module.exports = function(starting) {
-  var price = 10;
   var trinkets = 0;
   var coins = starting;
   return {
@@ -23,10 +22,14 @@ module.exports = function(starting) {
       price = num;
     },
     coins: function () {
-
+      var coinWealth = document.getElementById("coin-wealth");
+      coinWealth.textContent = coins.toFixed(2);
+      return coinWealth;
     },
     trinkets: function () {
-
+      var trinketWealth = document.getElementById("trinket-wealth");
+      trinketWealth.textContent = trinkets;
+      return trinketWealth;
     },
   };
 };
